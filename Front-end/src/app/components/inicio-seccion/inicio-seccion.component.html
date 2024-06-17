@@ -1,0 +1,5 @@
+<form [formGroup]="credencialesFormulario" (ngSubmit)="handleSubmit()">
+    <input type="text" placeholder="Usuario" formControlName="usuario">
+    <input type="password" placeholder="Password" formControlName="password">
+    <input type="submit" placeholder="Log In">
+</form>
