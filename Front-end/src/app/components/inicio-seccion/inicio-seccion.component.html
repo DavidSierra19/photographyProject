@@ -1,5 +1,15 @@
-<form [formGroup]="credencialesFormulario" (ngSubmit)="handleSubmit()">
-    <input type="text" placeholder="Usuario" formControlName="usuario">
-    <input type="password" placeholder="Password" formControlName="password">
-    <input type="submit" placeholder="Log In">
-</form>
+<body class="body">
+    <div class="formulario-registro">
+        <form [formGroup]="credencialesFormulario" (ngSubmit)="handleSubmit()" class="formulario">
+            <h5 class="tituloFormulario">INICIAR SESION</h5>
+            <p>¿Es tu primera vez? <a class="registro" routerLink="registro">Registrate</a></p>
+            <input class="campos" type="text" placeholder="Usuario" formControlName="usuario">
+            <input class="campos" type="password" placeholder="*********"   formControlName="password">
+            <input class="boton" type="submit" placeholder="Log In">
+        </form>
+    </div>
+    <div class="BodyResgistro">
+            <h5 class="tituloBody"><b>¡DESPIERTA TU PASIÓN POR LA FOTOGRAFÍA!</b></h5>
+    </div>
+        
+</body>

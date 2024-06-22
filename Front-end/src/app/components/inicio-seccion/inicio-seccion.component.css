@@ -1,0 +1,138 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    
+    background-color: rgb(245, 235, 217);
+}
+.BodyResgistro{
+    background-image: url("https://media.istockphoto.com/id/1040611248/es/foto/revisando-la-foto-fot%C3%B3grafo-dispara-con-su-equipo-en-un-ordenador-port%C3%A1til.jpg?s=612x612&w=0&k=20&c=7-hDYnGiY5lRXnw4CtUO_LZ4pa5zZsmv8mVwqiysM2g=");
+    background-size: cover;
+    background-position: center;
+    text-align: center;    
+    height: 400px;
+    width: 90%;
+}
+
+.formulario-registro{
+    background-color: white;
+    border: 1px solid seagreen;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.formulario{
+    text-align: top;
+    text-align: center;
+}
+.formulario h5{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: seagreen;
+}
+
+.formulario p{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.formulario a{
+    text-decoration: none;
+    
+}
+.campos{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid seagreen;
+}
+.boton{
+    padding: 10px;
+    width: 100%;
+    background-color: seagreen;
+    color: white;
+}
+.boton:hover{
+    background-color: rgb(63, 184, 115);
+    color: white;
+}
+
+
+
+.tituloBody{
+    background-color: white;
+    text-align: left;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 60% 0px;
+}
+
+/* Media Query funiconamiento del fomulario de la pagina */
+@media screen and (max-width: 1400px) {
+    .BodyResgistro{   
+        background-position: center;
+        height: 500px;
+    }
+    .formulario-registro{
+        padding: 100px 30px;
+        height: 500px;
+    }
+    .tituloBody{
+        margin: 400px 0px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .BodyResgistro{   
+        background-position: center;
+        height: 350px;
+    }
+    .formulario-registro{
+        padding: 50px 30px;
+        height: 350px;
+    }
+    .tituloBody{
+        margin: 280px 0px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .BodyResgistro{   
+        background-position: center;
+        height: 300px;
+        font-size: 12px;
+    }
+    .formulario-registro{
+        padding: 25px 30px;
+        height: 300px;
+    }
+    .tituloBody{
+        margin: 240px 0px;
+    }
+    }
+
+
+@media screen and (max-width: 560px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0px;
+    }
+    .BodyResgistro{   
+        background-position: center;
+        height: 300px;
+        margin: 0px 20px;
+    }
+    .formulario-registro{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        margin: 0px 4.8%;
+        padding: 45px 30px;
+        height: 350px;
+    }
+    .tituloBody{
+        margin: 240px 0px;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,114 @@
+/* Reset de valores */
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+.header{
+    background-color: #27535c ;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../../assets/AveAtardecer3.jpg");
+    background-position: top;
+    height: 100px;
+    width: auto;
+}
+.logo{
+    width: 150px;
+    padding: 10px 15px;
+    height: auto;
+}
+.nav{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 30px;
+   
+}
+
+.registro{
+    padding: 10px 10px;
+    color: #a0e4a0;
+    color: white;
+    background-color: #162c30;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.registro:hover{
+    padding: 8px 12px;
+    background-color: #3a7c89;
+    transition: 0.3s;
+}
+.nav-lista{
+    padding: 10px 0px;
+}
+.link-nav{
+    padding: 20px 15px;
+    color: white;
+}
+.link-nav:hover{
+    color: #bae7ba;
+    background-color: #27535c;
+     border-radius: 5px;
+    padding: 10px 10px;
+    transition: 0.35s;
+}
+.menu-hamburgesa{
+    margin: 0px;
+    width: 0%;
+    font-size: 30px;
+    background-color:none;
+    border: none;
+    color:white;
+    display: none;
+}
+
+.menu-hamburgesa:hover{
+    font-size: 35px;
+    transition: 0.35s;
+}
+
+@media screen and (max-width: 540px) {
+	.header{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../../assets/AveAtardecer4.jpg");
+        background-position: right;
+       
+    }
+    .menu-hamburgesa{
+        margin-right:40px ;
+        display:block;
+    }
+
+    .nav-lista{
+        display: flex;
+        align-items: center;
+        padding: 20px 0px;
+        flex-direction: column;
+        background-color:#162c30;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: calc(100vh - 100px);
+        overflow-y: auto;
+        font-size: 30px;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-lista_responsive{
+        left: 0;
+    }
+    .registro{
+        color:#3d7682;
+    }
+
+}

@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule} from '@angular/core';
+import { Routes, RouterModule} from '@angular/router';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { InicioSeccionComponent } from './components/inicio-seccion/inicio-seccion.component';
 import { RegistroComponent } from './components/registro/registro.component';
@@ -12,4 +13,10 @@ export const routes: Routes = [
     {path: "privada",title:"Zona Privada", component: ZonaPrivadaComponent},
     {path: "", redirectTo: "inicio", pathMatch: "full"},
     {path: "**", title: "404 | Pagina no encontrada", component: PaginaNoEncontradaComponent}
-   ]
+   ];
+
+   @NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+   })
+    export class AppRoutingModule { }

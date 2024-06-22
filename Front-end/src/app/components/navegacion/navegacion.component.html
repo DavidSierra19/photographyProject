@@ -1,6 +1,13 @@
-<nav>
-    <a routerLink="inicio">Inicio</a>
-    <a routerLink="inicio-seccion">Inicio-Seccion</a>
-    <a routerLink="registro">Registro</a>
-
-</nav>
+<header class="header">
+        <nav class="nav">
+            <a href="/inicio"><img src="../../../assets/Logo.png" alt="Logo" class="logo"></a>
+            <div class="menu-hamburgesa" (click)="menuSubmit()">
+                <i class="bi bi-list"></i>
+            </div> 
+            <ul class="nav-lista" [ngClass]="{'nav-lista_responsive': menuResponsivo}">
+                <a class="link-nav" routerLink="inicio">Inicio</a>
+                <a class="link-nav" routerLink="inicio-seccion">Inicio-Seccion</a>
+                <a class="registro" routerLink="registro">Registro</a>
+            </ul>
+        </nav>
+</header>

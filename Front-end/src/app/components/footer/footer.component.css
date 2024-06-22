@@ -1,0 +1,54 @@
+/* Reset de valores */
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/* Establecer los temas del footer 1*/
+
+.fondoFooter1{
+    background-color: #205f6b;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../../../assets/Ciudad.jpg");
+    background-position-x:center;
+    background-position-y: 290px ;
+    color: white;
+    padding: 20px 0px;
+}
+.tituloFooter1{
+    padding-bottom: 20px;
+}
+.espacio{
+    padding: 15px 50px;
+}
+.link{
+    color: white;
+}
+.link:hover{
+    color: #bae7ba;
+}
+.bi{
+    margin: 0px 5px;
+}
+/* Establecer los temas del footer 2(COPYRIGHT)*/
+.fondoFooter2{
+    background-color: #4b451f;
+    background-color: #474d2a;
+    background-color: #3b4023;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0px;
+    border-top: 2px solid white;
+}
+.resaltar{
+    color: #bae7ba;
+}

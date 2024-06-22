@@ -1,9 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators} from '@angular/forms';
-import {Router } from '@angular/router';
+import {Router,  RouterLink } from '@angular/router';
 import {JwtHelperService} from "@auth0/angular-jwt"
 import { Credencial } from '../../interfaces/credencial';
 import { LoginService } from '../../services/login.service';
+import { NavegacionComponent } from '../navegacion/navegacion.component';
+
 
 
 const jwtHelperService = new  JwtHelperService();
@@ -11,7 +13,7 @@ const jwtHelperService = new  JwtHelperService();
 @Component({
   selector: 'app-inicio-seccion',
   standalone: true,
-  imports: [ ReactiveFormsModule],
+  imports: [ ReactiveFormsModule, NavegacionComponent, RouterLink],
   templateUrl: './inicio-seccion.component.html',
   styleUrl: './inicio-seccion.component.css'
 })
