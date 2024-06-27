@@ -1,4 +1,7 @@
 # photographyProject
+
+---
+
 Proyecto: Página web para GEORGEIVAN PHOTOGRAPHY
 
 Descripción:
@@ -11,6 +14,7 @@ Esta página web está diseñada para un fotógrafo profesional. Cuenta con un s
 - Frontend: Angular
 - Backend: MongoDB
 - APIs: RESTful
+- Entre Otras
 
 ## Funcionalidades:
 - Inicio de sesión y registro de usuarios
@@ -38,22 +42,44 @@ Esta página web está diseñada para un fotógrafo profesional. Cuenta con un s
    ### frontend:
         app:
             components:
-                - login: Componente para el inicio de sesión.
-                -register: Componente para el registro de usuarios.
-                -contest: Componente para visualizar el concurso de fotografía semanal.
-                -participate: Componente para el formulario de registro para participar en el concurso.
+                -footer: pie de la pagina web
+                -header: Encabezado de la pagina web
+                -home: Parte inicial de la pagina web.
+                -inicio-seccion: Componente para el inicio de sesión.
+                -navegacion: Navegacion de la pagina web
+                -pagina-no-encontrada: Pagina de error por si no esta bien el link
+                -participar: Parte para registarse en el concurso
+                -registro: registro para poder entrar a pagina web
+                -servicios: planes del fotografo
+                -zona-privada: Se monstrara los concursantes
+
             services:
-                 -api.service: Servicio para realizar peticiones a las APIs.
-            models:
-                -user.model: Modelo de datos para los usuarios.
+                 -concurso.service: Servicio para realizar peticiones a las APIs del concurso.
+                 -crear-usuario: Servicio para realizar peticion a las Apis de crear usuario
+                 -login: Servicio para realizar peticion a las APIs de inicio de seccion
+            interfaces:
+                -concurso.ts: Modelo de datos para el concurso.
+                -crear-usuario: Modelo de datos para crear un usuario.
+                -credenciales: Modelo de datos para logearse.
 
   ### backend:
-        app.js: Archivo principal del servidor backend.
-        routes:
-            users.js: Rutas para las APIs de usuarios.
-            contest.js: Rutas para las APIs del concurso de fotografía.
-        models:
-            user.model: Modelo de datos para los usuarios
+        servidor.js: Archivo principal del servidor backend.
+        index.js: Ejecutar en puerto 3000 
+        conexionBD: Ejecutar en la base de datos
+
+        rutas
+            rutaUsuarios.js: Rutas para las APIs de usuarios.
+            rutaInicioSeccion.js: Rutas para las APIS de inicio de seccion.
+            rutaConcurso.js: Rutas para las APIs del concurso de fotografía
+        modelos
+            modelConcurso.js:  Modelo de datos para los participantes del concurso
+            modeloUsuarios.js:  Modelo de datos para los usuarios
+        controladores
+            controladorConcurso.js: CRUD para el API de Concurso 
+            controladoresInicioSeccion: CRUD para el API de Inicio de seccion 
+            controladorUsuarios.js: CRUD para el API de usuarios 
+        helper:
+            funciones.js: Funciones adicionales
 
   ### APIs:
     Usuarios:
