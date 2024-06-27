@@ -1,5 +1,5 @@
 # photographyProject
-Proyecto: Página web para fotógrafo
+Proyecto: Página web para GEORGEIVAN PHOTOGRAPHY
 
 Descripción:
 
