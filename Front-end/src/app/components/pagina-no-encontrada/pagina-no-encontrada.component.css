@@ -1,0 +1,29 @@
+.Error{
+ background-image: url("https://previews.123rf.com/images/aleksorel/aleksorel1703/aleksorel170300038/74313329-la-p%C3%A1gina-del-error-404-con-n%C3%BAmeros-verdes-vector-la-ilustraci%C3%B3n-en-fondo-negro-dise%C3%B1o-gr%C3%A1fico-de.jpg");
+ background-size: cover;
+ background-position: center;
+
+ width: 100%;
+ height: 800px;
+}
+
+
+@media screen and (max-width: 940px) {
+    .Error{   
+        width: 100%;
+        height: 750px;
+       }
+}
+@media screen and (max-width: 720px) {
+    .Error{   
+        width: 100%;
+        height: 600px;
+       }
+}
+@media screen and (max-width: 560px) {
+    .Error{   
+        width: 100%;
+        height: 300px;
+        
+       }
+}

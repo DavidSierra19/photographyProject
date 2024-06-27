@@ -44,8 +44,9 @@
 }
 .registro:hover{
     padding: 8px 12px;
-    background-color: #3a7c89;
-    transition: 0.3s;
+    background-color: #27535c;
+    transition: 0.2s;
+    color: #bae7ba;
 }
 .nav-lista{
     padding: 10px 0px;
@@ -74,6 +75,41 @@
 .menu-hamburgesa:hover{
     font-size: 35px;
     transition: 0.35s;
+}
+
+@media screen and (min-width: 960px) {
+    .header{
+        background-size: cover;
+        background-position: top;
+    }
+    .logo{
+        width: 100px;
+        padding: 10px 10px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 960px) {
+    .header{
+        background-size: cover;
+        background-position: top;
+    }
+    .logo{
+        width: 100px;
+        padding: 10px 0px;
+        margin: 0;
+        height: auto;
+    }
+    .nav-lista{
+        padding: 10px 0px;
+    }
+    .link-nav{
+        padding: 20px 10px;
+        color: white;
+        font-size: 13px;
+    }
+    .registro{
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width: 540px) {

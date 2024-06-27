@@ -8,10 +8,10 @@ const esquemaUsuario = new Schema(
         telefono: {type: Number, required: true},
         ciudad: {type: String, required: true},
         contrasena: {type: String, required: true},
-        fechaNacimiento: {type: Date, required: true},
-        genero: {type: String, required: true},
         confirmarContrasena: {type: String},
-        foto: {type: String, required: true}
+        fechaNacimiento: {type: String, required: true},
+        genero: {type: String, required: true},
+        
     }
 )
 export default model("Usuario", esquemaUsuario);

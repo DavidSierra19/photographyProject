@@ -1,0 +1,19 @@
+<body class="body">
+    <div class="logoRegistro">
+        
+    </div>
+        <form class="formulario" [formGroup]="credencialesFormulario3" (ngSubmit)="registrarSubmit()">
+            <strong> <h5 class="tituloFormulario">¡SUBE TU FOTO Y PARTICIPA EN EL CONCURSO SEMANAL!</h5> </strong>
+
+            <input class="campos" type="text" placeholder="Correo"   formControlName="correo">
+            <input class="campos" type="text" placeholder="Titulo" formControlName="titulo">
+            <input class="campos descripcion" type="string" placeholder="Imagen"   formControlName="foto" accept="image/*">
+            <P class="maximo ">SUBE TU FOTO PARA PARTICIPAR</P>                      
+            <input class="campos descripcion" type="text" placeholder="Descripcion"   formControlName="descripcion" maxlength="100">
+            <P class="maximo">MAXIMO 100 CARACTERES</P>          
+            
+            <input class="campos descripcion" type="checkbox" placeholder="Acepta"   formControlName="aceptacion">
+            <p class="maximo1 ">Acepta que su imagen sea mostrada en esta pagina</p>
+            <input class="boton" type="submit" placeholder="Log In">
+        </form>        
+</body>

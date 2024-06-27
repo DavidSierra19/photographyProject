@@ -8,14 +8,17 @@
 }
 .logoRegistro{
     margin-top: 50px;
-    background-image: url("https://img.freepik.com/vector-premium/fondo-forma-geometrica-moderna-minima-abstracta_592487-954.jpg?size=626&ext=jpg");
+    background-image: url("https://fotografias.lasexta.com/clipping/cmsimages02/2020/09/21/86828440-B1FB-43AC-9E9C-A94AC6A4B8BD/default.jpg?crop=1300,731,x0,y0&width=1900&height=1069&optimize=low");
     background-size: cover;
+    background-position: center;
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: -30px 25px 20px rgba(128, 173, 170, 0.7);
+    width: 70%;
+    height: 320px;
 }
 .logoRegistro img{
     width: 100%;
@@ -25,6 +28,7 @@
     max-height: 200px;
     margin-top: 0px;
 }
+
 .formulario{
     background-color: white;
     margin-top: -15px;
@@ -63,7 +67,18 @@
 }
 
 
-
+.descripcion{
+    margin-bottom: 0;
+}
+.maximo{
+    font-size: 10px;
+    text-align: left;
+    margin: 0;
+}
+.maximo1{
+    font-size: 10px;
+    margin: 0;
+}
 
 /* Media Query funiconamiento del fomulario de la pagina */
 
@@ -89,5 +104,7 @@
         margin-right: 8%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        width: 84%;
+        height: 200px;
     }
 }

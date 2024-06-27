@@ -1,0 +1,268 @@
+/* Reset de valores */
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+.body{
+    margin: 0;
+    width: 100vh;
+    padding: 0;
+}
+.biografia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.fotoBiografia{
+    width:max-content;
+    border-radius: 50%;
+    width: 400px ;
+    margin: 50px;
+    
+}
+.textoBiografia{
+    margin: 50px;
+    font-size: 20px;
+    font-family: 'Arial';
+    text-align: justify;
+}
+.menosTexto{
+    margin: 50px;
+    font-size: 20px;
+    font-family: 'Arial';
+    text-align: justify;
+    display: none;
+}
+.noticias{
+    background-color: rgb(216, 200, 170);
+    padding: 20PX;
+    margin: 0%;
+    width: 100%;
+}
+.tituloNoticias{
+    text-align: center;
+    padding: 20px;
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.tarjeta1{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    margin: 0px 50px;
+    align-items: center;
+}
+
+.fotoTarjeta{
+    border-top-left-radius: 50px;
+}
+.boton{
+    background-color: rgb(205, 150, 150);
+    padding: 7px;
+    margin-top: 15px;
+    color: white;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0px;
+    text-align: justify;
+}
+
+.card-body h5{
+    margin: 5px  0px;
+}
+
+.carrusel{
+    width: 900px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 600%;
+    animation: movimiento 15s infinite alternate ease-in-out;
+}
+.carrusel li{
+    width: 100%;
+    list-style: none;
+}
+
+.carrusel img{
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+.misFotos{
+    text-align: center;
+    
+    margin-top: 50px;
+}
+
+.concurso{
+    width: 100%;
+    margin: 20px 0px; 
+}
+.concurso2{
+    width: 100%;
+    margin: 20px 0px; 
+    display: none;
+}
+#btn{
+    display: none;
+}
+.incribirme{
+    background-color: rgb(205, 150, 150);
+    padding: 7px;
+    margin: 0px 40%;
+    color: white;
+    text-align: center;
+    width: 20%;
+    border-radius: 10px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.privada{
+    text-decoration: none;
+    color: black;
+    
+}
+@keyframes movimiento{
+    0%{margin-left: 0;}
+    13%{margin-left: 0;}
+
+    17%{margin-left: -100%;}
+    30%{margin-left: -100%;}
+
+    34%{margin-left: -200%;}
+    47%{margin-left: -200%;}
+
+    51%{margin-left: -300%;}
+    64%{margin-left: -300%;}
+
+    68%{margin-left: -400%;}
+    81%{margin-left: -400%;}
+
+    85%{margin-left: -500%;}
+    100%{margin-left: -500%;}
+    
+    
+}
+/* Media Query funiconamiento del fomulario de la pagina */
+
+@media screen and (max-width: 1400px) {
+    
+}
+@media screen and (max-width: 950px) {
+    .biografia{
+        flex-direction: column;
+    }
+    .fotoBiografia{
+        width: 300px;
+    }
+    .textoBiografia{
+        font-size: 15px;
+    }
+    .tarjetas{
+        flex-direction: column;
+    }
+    .tarjeta1{
+        margin: 20px 0px;
+    }
+    .carrusel{
+        width: 400px;
+    }
+    .incribirme{
+        margin: 0px 40%;
+        margin-bottom: 20px;
+        width: 20%;
+    }
+
+}
+@media screen and (max-width: 720px) {
+    .biografia{
+        padding: 20px;
+    }
+    .textoBiografia{
+        margin: 0px 10px;
+        margin-bottom: 30px;
+        
+    }
+    .incribirme{
+        margin: 0px 35%;
+        margin-bottom: 20px;
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .biografia{
+        padding: 5px;
+    }
+    .textoBiografia{
+        margin: 0px 20px;
+        margin-bottom: 30px;
+        
+    }
+    .misFotos{
+        margin: 0px;
+    }
+    .carrusel{
+        width: 280px;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+    }
+
+    .foto{
+        width: 250px;
+    }
+    .concurso{
+        width: 100%;
+        margin: 20px 0px; 
+        display: none;
+    }
+    .concurso2{
+        width: 100%;
+        margin: 20px 0px; 
+        display: inline;
+        
+    }
+
+    .incribirme{
+        margin: 0px 32%;
+        margin-bottom: 20px;
+        width: 36%;
+    }
+
+}

@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Router,  RouterLink } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import {JwtHelperService} from "@auth0/angular-jwt"
 import { Credencial } from '../../interfaces/credencial';
 import { LoginService } from '../../services/login.service';
@@ -19,6 +20,7 @@ const jwtHelperService = new  JwtHelperService();
 })
 export class InicioSeccionComponent {
   router = inject(Router);
+  toastrService = inject(ToastrService);
   loginService: LoginService = inject(LoginService);
 
     credencialesFormulario =new FormGroup({
@@ -36,20 +38,21 @@ export class InicioSeccionComponent {
             password
           }
           this.loginService.login(credencial).subscribe((respuesta: any)=>{
-            console.log("Respuesta 1",respuesta)
-            const decoded = jwtHelperService.decodeToken(respuesta.datos);
-            console.log("Decodificacion",decoded)
+            if(respuesta.resultado ==="Algo esta mal"){
+              this.toastrService.error("Error: Usuario o contraseña incorrectos");}else{
+          const decoded = jwtHelperService.decodeToken(respuesta.datos);
             if(decoded === null){
-              console.log("Error con credenciales")
+              this.toastrService.error("Error: Usuario o contraseña incorrectos");
             }else{
               localStorage.setItem("Token",respuesta.datos);
-              this.router.navigateByUrl("/privada")
+              this.router.navigate(['/concurso']);
+              this.toastrService.success("Inicio de sesión exitoso");
             }
-            
+          }
           });
         }      
       }else{
-        console.log("Error: Campos vacios");
+        this.toastrService.warning("Todas las casillas son requeridas");
       }
     }
 }

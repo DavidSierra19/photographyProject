@@ -1,1 +1,19 @@
-<p>registro works!</p>
+<body class="body">
+    <div class="logoRegistro">
+        <img class="logo" src="../../../assets/usuario.png" alt="logo">
+    </div>
+        <form class="formulario" [formGroup]="credencialesFormulario2" (ngSubmit)="registrarSubmit()">
+            <h5 class="tituloFormulario">¡CREE UNA CUENTA!</h5>
+
+            <input class="campos" type="text" placeholder="Nombre(s)" formControlName="nombre">
+            <input class="campos" type="text" placeholder="Apellidos"   formControlName="apellido">            
+            <input class="campos" type="text" placeholder="correo"   formControlName="correo">          
+            <input class="campos" type="number" placeholder="Telefono"   formControlName="telefono">            
+            <input class="campos" type="text" placeholder="Ciudad"   formControlName="ciudad">            
+            <input class="campos" type="password" placeholder="Contraseña"   formControlName="contrasena">            
+            <input class="campos" type="password" placeholder="Confrimar contraseña"   formControlName="confirmarContrasena">            
+            <input class="campos" type="string" placeholder="Fecha de Nacimiento"   formControlName="fechaNacimiento">            
+            <input class="campos" type="text" placeholder="Genero"   formControlName="genero">
+            <input class="boton" type="submit" placeholder="Log In">
+        </form>        
+</body>

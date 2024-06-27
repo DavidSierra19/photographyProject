@@ -14,7 +14,7 @@ const ControladorUsuarios = {
             if(solicitud.body.genero === "") throw new Error("Falta genero");
             if(solicitud.body.foto === "") throw new Error("Falta foto");
             if(solicitud.body.contrasena !== solicitud.body.confirmarContrasena) throw new Error("Las contraseñas no son iguales");
-            const {nombre,apellido,correo,telefono,ciudad,contrasena,fechaNacimiento,genero,foto} = solicitud.body;
+            const {nombre,apellido,correo,telefono,ciudad,contrasena,fechaNacimiento,genero} = solicitud.body;
             const contrasenaProtegida = await bcrypt.hash(contrasena, 10);
             const nuevoUsuario = new modeloUsuarios({
                 nombre,
@@ -24,8 +24,7 @@ const ControladorUsuarios = {
                 ciudad,
                 contrasena: contrasenaProtegida,
                 fechaNacimiento,
-                genero,
-                foto
+                genero
             });         
             const usuarioCreado = await nuevoUsuario.save();
             if(usuarioCreado.id){

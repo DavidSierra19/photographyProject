@@ -4,7 +4,7 @@
     align-items: center;
     padding: 30px 30px;
     
-    background-color: rgb(245, 235, 217);
+    background-color: rgb(247, 240, 228);
 }
 .BodyResgistro{
     background-image: url("https://media.istockphoto.com/id/1040611248/es/foto/revisando-la-foto-fot%C3%B3grafo-dispara-con-su-equipo-en-un-ordenador-port%C3%A1til.jpg?s=612x612&w=0&k=20&c=7-hDYnGiY5lRXnw4CtUO_LZ4pa5zZsmv8mVwqiysM2g=");
@@ -70,7 +70,8 @@
 }
 
 /* Media Query funiconamiento del fomulario de la pagina */
-@media screen and (max-width: 1400px) {
+
+@media screen and (min-width: 940px) {
     .BodyResgistro{   
         background-position: center;
         height: 500px;

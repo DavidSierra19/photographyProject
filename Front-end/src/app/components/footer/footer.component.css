@@ -52,3 +52,10 @@
 .resaltar{
     color: #bae7ba;
 }
+
+@media screen and (min-width: 960px) {
+    .fondoFooter1{
+        background-size: cover;
+    }
+}
+
