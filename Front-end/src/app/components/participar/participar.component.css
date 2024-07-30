@@ -79,6 +79,16 @@
     font-size: 10px;
     margin: 0;
 }
+.concurso{
+    width: 100%;
+    margin: 20px 0px;
+    margin-top: 50px; 
+}
+.concurso2{
+    width: 100%;
+    margin: 20px 0px; 
+    display: none;
+}
 
 /* Media Query funiconamiento del fomulario de la pagina */
 
@@ -107,4 +117,18 @@
         width: 84%;
         height: 200px;
     }
+}
+@media screen and (max-width: 400px) {
+    .concurso{
+        width: 100%;
+        margin: 20px 0px; 
+        display: none;
+    }
+    .concurso2{
+        width: 100%;
+        margin: 20px 0px; 
+        display: inline;
+        
+    }
+
 }

@@ -3,12 +3,12 @@
         
     </div>
         <form class="formulario" [formGroup]="credencialesFormulario3" (ngSubmit)="registrarSubmit()">
-            <strong> <h5 class="tituloFormulario">¡SUBE TU FOTO Y PARTICIPA EN EL CONCURSO SEMANAL!</h5> </strong>
+             <h5 class="tituloFormulario"> <strong>¡SUBE TU FOTO Y PARTICIPA EN EL CONCURSO SEMANAL! </strong></h5> 
 
             <input class="campos" type="text" placeholder="Correo"   formControlName="correo">
             <input class="campos" type="text" placeholder="Titulo" formControlName="titulo">
-            <input class="campos descripcion" type="string" placeholder="Imagen"   formControlName="foto" accept="image/*">
-            <P class="maximo ">SUBE TU FOTO PARA PARTICIPAR</P>                      
+            <input class="campos descripcion" type="string" placeholder="Link de la foto"   formControlName="foto" accept="image/*">
+            <P class="maximo ">PON EL LINK DE TU IMAGEN PARA PARTICIPAR</P>                      
             <input class="campos descripcion" type="text" placeholder="Descripcion"   formControlName="descripcion" maxlength="100">
             <P class="maximo">MAXIMO 100 CARACTERES</P>          
             

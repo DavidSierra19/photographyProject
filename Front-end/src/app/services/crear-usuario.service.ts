@@ -15,7 +15,7 @@ export class CrearUsuarioService {
   toastrService = inject(ToastrService);
   router = inject(Router);
 
-  API_URL = "http://localhost:3000/usuarios";
+  API_URL = "http://3.15.160.20:3000/usuarios";
   
 
   crearUsuario(crearUsuarios: CrearUsuario){

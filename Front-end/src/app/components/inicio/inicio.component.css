@@ -45,7 +45,7 @@
     display: none;
 }
 .noticias{
-    background-color: rgb(216, 200, 170);
+    background-color: #ded0b4;
     padding: 20PX;
     margin: 0%;
     width: 100%;
@@ -76,7 +76,7 @@
     border-top-left-radius: 50px;
 }
 .boton{
-    background-color: rgb(205, 150, 150);
+    background-color: #a0a377;
     padding: 7px;
     margin-top: 15px;
     color: white;
@@ -139,7 +139,7 @@
     display: none;
 }
 .incribirme{
-    background-color: rgb(205, 150, 150);
+    background-color: #a0a377;
     padding: 7px;
     margin: 0px 40%;
     color: white;

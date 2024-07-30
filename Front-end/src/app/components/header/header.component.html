@@ -6,13 +6,13 @@
         </div> 
         <ul class="nav-lista" [ngClass]="{'nav-lista_responsive': menuResponsivo}">
             <a class="link-nav" routerLink="inicio">Inicio</a>
-            <a class="link-nav" routerLink="servicios">Servicios</a>
+           <!--  <a class="link-nav" routerLink="servicios">Servicios</a> -->
 
             @if(loginService.logeado()){
                 
-                <a class="link-nav" routerLink="incribirse">Incribirse</a>
+                <a class="link-nav" routerLink="incribirse">Inscribirse</a>
                 <a class="link-nav" routerLink="concurso">Concurso</a>
-                <button  type="button" class="registro" (click)="loginService.cerrarSeccion()" >Cerrar Seccion</button>
+                <button  type="button" class="registro" (click)="loginService.cerrarSeccion()" >Cerrar Sesion</button>
             } @else{
                 <a class="registro" routerLink="inicio-seccion">Inicio-Seccion</a>
             }
