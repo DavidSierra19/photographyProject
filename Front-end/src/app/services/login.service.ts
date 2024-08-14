@@ -14,7 +14,7 @@ export class LoginService {
   toastrService = inject(ToastrService);
   router = inject(Router);
 
-  API_URL = "http://3.15.160.20:3000/inicio-seccion";
+  API_URL = "http://13.58.63.140:3000/inicio-seccion";
   
   login(credencial: Credencial){
     return this.httpClient.post(this.API_URL, credencial);

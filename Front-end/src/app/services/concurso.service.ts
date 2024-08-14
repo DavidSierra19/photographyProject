@@ -11,7 +11,7 @@ export class ConcursoService {
 
   constructor() { }
 
-  API_URL: string = "http://3.15.160.20:3000/concurso"
+  API_URL: string = "http://13.58.63.140:3000/concurso"
   
   httpClient = inject(HttpClient);
 
